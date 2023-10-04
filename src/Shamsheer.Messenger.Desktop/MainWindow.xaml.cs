@@ -178,5 +178,9 @@ namespace Shamsheer.Messenger.Desktop
             //}
         }
 
+        private void _frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }
