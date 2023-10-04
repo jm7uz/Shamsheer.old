@@ -159,6 +159,6 @@
                     </StackPanel>
                 </Grid>
             </Grid>
-
         </Grid>
+    </Grid>
 </Window>
