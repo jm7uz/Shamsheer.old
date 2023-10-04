@@ -100,13 +100,12 @@
                             <BlurEffect Radius="5" KernelType="Gaussian"/>
                         </Image.Effect>
                     </Image>
-                    <!--<Frame x:Name="_frameChat" Source="pages/ChatPage.xaml" NavigationUIVisibility="Hidden"/>-->
-                    <pages:Profile/>
+                    <Frame x:Name="_frameChat" Source="pages/ChatPage.xaml" NavigationUIVisibility="Hidden"/>
                 </Grid>
             </Grid>
             <!--Menu-->
             <Border x:Name="CloseMenu_Border" MouseUp="CloseMenu_Border_MouseUp" Visibility="Collapsed" Background="Black" Opacity="0.3"/>
-            <Frame x:Name="_frame" NavigationUIVisibility="Hidden" Navigated="_frame_Navigated"/>
+            <Frame x:Name="_frame" NavigationUIVisibility="Hidden"/>
             <Grid x:Name="MenuGrid" Background="#17212B" HorizontalAlignment="Left" Width="280" Margin="-280 0 0 0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="133"/>
@@ -160,7 +159,6 @@
                     </StackPanel>
                 </Grid>
             </Grid>
-
         </Grid>
     </Grid>
 </Window>

@@ -5,32 +5,91 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Shamsheer.Messenger.Desktop.Pages" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="690" d:DesignWidth="450">
+             d:DesignHeight="570" d:DesignWidth="450">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition MaxHeight="50"/>
-            <RowDefinition MaxHeight="170"/>
+            <RowDefinition MaxHeight="190"/>
             <RowDefinition MaxHeight="50"/>
-            <RowDefinition MaxHeight="170"/>
-            <RowDefinition MaxHeight="50"/>
-            <RowDefinition MaxHeight="200"/>
+            <RowDefinition MaxHeight="70"/>
+            <RowDefinition MaxHeight="150"/>
+            <RowDefinition MaxHeight="60"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#17212B">
             <TextBlock  VerticalAlignment="Center" >
-                <materialDesign:PackIcon Kind="ArrowLeft" Foreground="Snow" Height="28" Width="38"/>
+                <materialDesign:PackIcon Kind="ArrowLeft" Foreground="Snow" Height="28" Width="38" Margin="10 0"/>
             </TextBlock>
-            <TextBlock Text="Info" FontSize="20" Foreground="snow" VerticalAlignment="Center" Margin="57,0,0,0"/>
+            <TextBlock Text="Info" FontSize="20" Foreground="snow" VerticalAlignment="Center" Margin="70,0,0,0"/>
             <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Right">
                 <materialDesign:PackIcon Kind="Close" Foreground="Snow" Height="28" Width="38"/>
             </TextBlock>
         </Grid>
 
-        <Grid Grid.Row="1" Background="#17212B">
+        <StackPanel Grid.Row="1" Background="#17212B">
             <Ellipse Width="100" Height="100">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="D:\Net new Source Codes\Shamsheer\Shamsheer\src\Shamsheer.Messenger.Desktop\Images\2.jpg.jpg" Stretch="UniformToFill"/>
+                    <ImageBrush  Stretch="UniformToFill"/>
                 </Ellipse.Fill>
             </Ellipse>
+            <Border HorizontalAlignment="Center" Background="#2F6EA5" CornerRadius="50" Width="40" Height="40" Margin="-10">
+                <materialDesign:PackIcon Kind="Camera" Foreground="Snow" Height="28" Width="38" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <TextBlock Text="Thompson" FontSize="20" Foreground="snow" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0 "/>
+            <TextBlock Text="Online" FontSize="16" Foreground="#69B2F1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        </StackPanel>
+        
+        <Grid Grid.Row="2" Background="#17212B">
+            <TextBox BorderThickness="0" Margin="15 0" Width="350" Height="40" Foreground="snow" FontSize="16" Padding="8" TextChanged="TextBox_TextChanged" HorizontalAlignment="left" Text=""/>
+            <TextBlock Text="70" Foreground="snow" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10 0" FontSize="18"/>
         </Grid>
+        
+        <StackPanel Grid.Row="3" Background="#232E3C">
+            <TextBlock Margin="10" FontSize="16" Foreground="#70847C" Text="Any details such as age, occupation or city." />
+            <TextBlock Margin="10 0" FontSize="16" Foreground="#70847C" Text="Example: 23 years old .NET developer" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Background="#17212B">
+            <Grid Height="150">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" >
+                        <materialDesign:PackIcon Kind="User" Foreground="Snow" Width="38" Height="28" Margin="10"/>
+                    </TextBlock>
+                    <TextBlock Text="Name" Foreground="snow" VerticalAlignment="Center" FontSize="16" FontWeight="Light" Margin="90 0 0 0"/>
+                    <TextBlock Text="Thompson" Foreground="#6AB3D5" VerticalAlignment="Center"  HorizontalAlignment="Right" FontSize="16" FontWeight="Light" Margin="10 0"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" >
+                        <materialDesign:PackIcon Kind="Phone" Foreground="Snow" Width="38" Height="28" Margin="10"/>
+                    </TextBlock>
+                    <TextBlock Text="Phone number" Foreground="snow" VerticalAlignment="Center" FontSize="16" FontWeight="Light" Margin="90 0 0 0"/>
+                    <TextBlock Text="+998901234567" Foreground="#6AB3D5" VerticalAlignment="Center"  HorizontalAlignment="Right" FontSize="16" FontWeight="Light" Margin="10 0"/>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" >
+                        <materialDesign:PackIcon Kind="at" Foreground="Snow" Width="38" Height="28" Margin="10"/>
+                    </TextBlock>
+                    <TextBlock Text="Username" Foreground="snow" VerticalAlignment="Center" FontSize="16" FontWeight="Light" Margin="90 0 0 0"/>
+                    <TextBlock Text="@shamsheer" Foreground="#6AB3D5" VerticalAlignment="Center"  HorizontalAlignment="Right" FontSize="16" FontWeight="Light" Margin="10 0"/>
+                </Grid>
+
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Background="#232E3C">
+            <TextBlock Margin="10 10 0 0" FontSize="16" Foreground="#70847C" Text="Username lets  people contact you on telegram without" />
+            <TextBlock Margin="10 0 0 0" FontSize="16" Foreground="#70847C" Text="needing your phone number" />
+        </StackPanel>
+
+
+
     </Grid>
 </UserControl>
