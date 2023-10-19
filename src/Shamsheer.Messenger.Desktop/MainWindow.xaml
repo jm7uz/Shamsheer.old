@@ -73,11 +73,15 @@
 
                     <Grid Grid.Row="0">
                         <!--search-->
-                        <DockPanel>
-                            <Button x:Name="OpenMenu_Btn" Click="OpenMenu_Btn_Click" Width="50" Height="50" Padding="0" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0">
-                                <md:PackIcon Kind="HamburgerMenu" Foreground="#727C88" Width="25" Height="28"/>
+                        <DockPanel >
+                            <Button x:Name="OpenMenu_Btn" Click="OpenMenu_Btn_Click" Width="50"  Height="50" Padding="0" HorizontalAlignment="Left" Background="Transparent"
+                                    BorderThickness="0">
+                                <md:PackIcon Kind="HamburgerMenu" Foreground="#727C88" Width="25" Height="28"
+                                            BorderThickness ="0"/>
                             </Button>
-                            <TextBox x:Name="searchTxt" TextChanged="searchTxt_TextChanged" Padding="5 0 5 0" md:TextFieldAssist.TextFieldCornerRadius="5" VerticalContentAlignment="Center" md:HintAssist.Hint="Search" md:HintAssist.HintOpacity="0.3" FontSize="13" Margin="0 8 10 8" Foreground="White" Background="#232F3D"/>
+                            <TextBox x:Name="searchTxt" CaretBrush="Snow" IsReadOnlyCaretVisible="False"
+                                     BorderThickness="0" TextChanged="searchTxt_TextChanged" Padding="5 0 5 0" md:TextFieldAssist.TextFieldCornerRadius="15" VerticalContentAlignment="Center" md:HintAssist.Hint="Search" md:HintAssist.HintOpacity="0.3" FontSize="13" Margin="0 8 10 8" Foreground="White" Background="#232F3D"
+                                     TextAlignment="Left" md:TextBlockAssist.AutoToolTip="False"/>
                         </DockPanel>
                     </Grid>
 
@@ -105,7 +109,7 @@
             </Grid>
             <!--Menu-->
             <Border x:Name="CloseMenu_Border" MouseUp="CloseMenu_Border_MouseUp" Visibility="Collapsed" Background="Black" Opacity="0.3"/>
-            <Frame x:Name="_frame" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="_frame" Visibility="Hidden" />
             <Grid x:Name="MenuGrid" Background="#17212B" HorizontalAlignment="Left" Width="280" Margin="-280 0 0 0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="133"/>
@@ -159,7 +163,6 @@
                     </StackPanel>
                 </Grid>
             </Grid>
-
         </Grid>
     </Grid>
 </Window>
